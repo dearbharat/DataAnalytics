@@ -1,0 +1,30 @@
+---
+title: Visualizing Data with ggplot2
+author: dearbharat
+date: '2021-05-18'
+slug: visualizing-data-with-ggplot2
+categories:
+  - ggplot2
+tags: []
+---
+
+## Palmer Penguins
+
+```{r message=FALSE, echo=FALSE}
+library(palmerpenguins)
+library(tidyverse)
+glimpse(penguins)
+```
+## Bill Depth and Length
+
+```{r warning=FALSE, echo=FALSE}
+ggplot(data = penguins, 
+       mapping = aes(x = bill_depth_mm, y = bill_length_mm,
+                     colour = species)) +
+  geom_point() +
+  labs(title = "Bill depth and length",
+       subtitle = "Dimensions for Adelie, Chinstrap, and Gentoo Penguins",
+       x = "Bill depth (mm)", y = "Bill length (mm)",
+       colour = "Species")
+```
+

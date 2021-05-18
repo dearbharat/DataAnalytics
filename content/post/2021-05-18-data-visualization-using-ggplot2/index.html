@@ -37,6 +37,9 @@ sequenceDiagrams:
 <div id="dataset-terminology" class="section level2">
 <h2>Dataset Terminology</h2>
 <pre class="r"><code>library(dplyr)
+library(ggplot2)
+library(tidyverse)
+library(Tmisc)
 starwars</code></pre>
 <pre><code>## # A tibble: 87 x 14
 ##    name  height  mass hair_color skin_color eye_color birth_year sex   gender
@@ -70,4 +73,23 @@ starwars</code></pre>
 ## $ films      &lt;list&gt; [&lt;&quot;The Empire Strikes Back&quot;, &quot;Revenge of the Sith&quot;, &quot;Retu…
 ## $ vehicles   &lt;list&gt; [&lt;&quot;Snowspeeder&quot;, &quot;Imperial Speeder Bike&quot;&gt;, &lt;&gt;, &lt;&gt;, &lt;&gt;, &quot;I…
 ## $ starships  &lt;list&gt; [&lt;&quot;X-wing&quot;, &quot;Imperial shuttle&quot;&gt;, &lt;&gt;, &lt;&gt;, &quot;TIE Advanced x1…</code></pre>
+</div>
+<div id="mass-vs-height" class="section level2">
+<h2>Mass Vs Height</h2>
+<pre class="r"><code>ggplot(data = starwars, mapping = aes(x = height, y = mass)) +
+  geom_point() +
+  labs(title = &quot;Mass vs. height of Starwars characters&quot;,
+       x = &quot;Height (cm)&quot;, y = &quot;Weight (kg)&quot;)</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+</div>
+<div id="anscombes-quartet" class="section level2">
+<h2>Anscombe’s Quartet</h2>
+<pre><code>## # A tibble: 4 x 6
+##   set   mean_x mean_y  sd_x  sd_y     r
+## * &lt;fct&gt;  &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1 I          9   7.50  3.32  2.03 0.816
+## 2 II         9   7.50  3.32  2.03 0.816
+## 3 III        9   7.5   3.32  2.03 0.816
+## 4 IV         9   7.50  3.32  2.03 0.817</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
 </div>
