@@ -25,15 +25,5 @@
       <description>  Palmer Penguins ## Rows: 344 ## Columns: 8 ## $ species &amp;lt;fct&amp;gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Ade… ## $ island &amp;lt;fct&amp;gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgers… ## $ bill_length_mm &amp;lt;dbl&amp;gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1,… ## $ bill_depth_mm &amp;lt;dbl&amp;gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1,… ## $ flipper_length_mm &amp;lt;int&amp;gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 18… ## $ body_mass_g &amp;lt;int&amp;gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475,… ## $ sex &amp;lt;fct&amp;gt; male, female, female, NA, female, male, female, mal… ## $ year &amp;lt;int&amp;gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 200…  Bill Depth and Length  </description>
     </item>
     
-    <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
-      
-      <guid>/about/</guid>
-      <description>I am a full stack data scientist harvesting data from its origin in raw form to finished end product in form of insights and strategy. Be it conventional statistics or modern data mining algorithms, I apply what is necessary to solve the problem.
-As a Practitioner, I have worked on several commercially deployable machine learning models such as automated risk underwriting for an insurance company, financial product recommender system for a bank, Comprehensive automated student feedback system etc.</description>
-    </item>
-    
   </channel>
 </rss>
