@@ -1,0 +1,40 @@
+---
+title: Data and Visualization
+author: Bharat Bhushan Verma
+date: '2021-05-18'
+slug: data-visualization-using-ggplot2
+categories:
+  - ggplot2
+tags: []
+lastmod: '2021-05-18T03:15:00-03:00'
+keywords: []
+description: ''
+comment: no
+toc: no
+autoCollapseToc: no
+postMetaInFooter: no
+hiddenFromHomePage: no
+contentCopyright: no
+reward: no
+mathjax: no
+mathjaxEnableSingleDollar: no
+mathjaxEnableAutoNumber: no
+hideHeaderAndFooter: no
+flowchartDiagrams:
+  enable: no
+  options: ''
+sequenceDiagrams:
+  enable: no
+  options: ''
+---
+## Dataset Terminology
+
+```{r message=FALSE}
+library(dplyr)
+starwars
+```
+
+```{r}
+glimpse(starwars)
+```
+
