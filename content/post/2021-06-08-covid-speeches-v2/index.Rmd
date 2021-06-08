@@ -1,0 +1,13 @@
+---
+title: Covid Speeches v2
+author: R package build
+date: '2021-06-08'
+slug: covid-speeches-v2
+categories:
+  - shiny
+tags: []
+---
+
+## Covid Speeches of UK and Scotland
+
+

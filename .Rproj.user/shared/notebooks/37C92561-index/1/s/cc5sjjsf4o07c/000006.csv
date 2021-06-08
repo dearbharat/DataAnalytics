@@ -1,3 +1,0 @@
-"0","ggplot(quartet, aes(x = x, y = y)) +"
-"0","  geom_point() +"
-"0","  facet_wrap(~ set, ncol = 4)"

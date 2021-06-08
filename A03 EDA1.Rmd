@@ -1,0 +1,156 @@
+---
+title: "A03 EDA"
+author: "dearbharat"
+date: "6/3/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Import Data
+```{r warning=FALSE}
+library(tidyverse)
+lego <- read_csv("lego_sales.csv")
+```
+
+## 1- What are the three most common first names of customers?
+
+```{r}
+lego %>%
+  select(first_name) %>%
+  count(first_name) %>%
+  arrange(desc(n))
+```
+
+2- What are the three most common themes of lego sets purchased?
+
+```{r}
+lego %>%
+    select(theme) %>%
+    count(theme) %>%
+    arrange(desc(n))
+```
+## 3- Among the most common theme of lego sets purchased, what is the most common subtheme?
+
+```{r}
+lego %>%
+    select(theme, subtheme) %>%
+    filter(theme=="Star Wars" |
+           theme=="Nexo Knights" |
+           theme=="Gear" |
+           theme=="Mixels") %>%
+    count(subtheme) %>%
+    arrange(desc(n))
+```
+## 4- Create a new variable called age_group and group the ages into the following categories: “18 and under”, “19 - 25”, “26 - 35”, “36 - 50”, “51 and over”. Be sure to save the updated data set so you can use the new variable in other questions.
+```{r}
+lego_age_group <- lego %>%
+    mutate(age_group=case_when(
+        age <= 18 ~ "18 and under" ,
+        between(age, 19, 25) ~ "19 - 25" ,
+        between(age, 26, 35) ~ "26 - 35" ,
+        between(age, 36, 50) ~ "36 - 50" ,
+        age >= 51 ~ "51 and over" ,
+    ))
+# To represent result:
+lego_age_group %>%
+    select(first_name, age ,age_group)
+```
+## 5- What is the probability a randomly selected customer 
+### is in the 19 - 25 age group?
+```{r}
+lego_age_group  %>%
+    count(age_group) %>%
+    mutate(probablity=n/sum(n))
+```
+### is in the 19 - 25 age group and purchased a Duplo theme set?
+
+```{r}
+lego_age_group  %>%
+        mutate(target_group=case_when(
+            theme== "Duplo" & between(age, 19, 25) ~ 
+            "Target Group" ,
+            TRUE ~ "Not that group!")) %>% 
+            # To represent result:
+    select(theme ,age_group, target_group) %>% 
+  # To represent result:
+    count(target_group) %>%
+    mutate(probablity=n/sum(n))
+```
+### is in the 19 - 25 age group given they purchased a Duplo theme set?
+
+```{r}
+lego_age_group  %>%
+        filter(theme == "Duplo")  %>%
+        mutate(target_group=case_when(
+        between(age, 19, 25) ~ "purchased a Duplo an 19-25 age group" ,
+        TRUE ~ "purchased a Duplo an NOT 19-25 age group"
+             )) %>%
+
+# To represent result:
+
+    select(theme ,age_group, target_group) %>%
+
+# To represent result:
+     count(target_group) %>%
+    mutate(probablity=n/sum(n))
+
+```
+## 6- Which age group has purchased the largest number of lego sets? How many did they purchase?
+
+```{r}
+new <- lego_age_group  %>%
+    group_by(age_group)  %>%
+    count(quantity)  %>%
+    summarise(Number_of_Purchase=sum(n*quantity)) %>%
+      arrange(desc(Number_of_Purchase))
+
+
+new
+```
+## 7- Which age group has spent the most money on legos? How much did they spend?
+
+```{r}
+new1 <- lego_age_group %>%
+    select(age_group, us_price, quantity) %>%
+    group_by(age_group)  %>%
+    summarise(Total=sum(quantity*us_price)) %>%
+    arrange(desc(Total))
+
+new1
+```
+
+## 8- Come up with a question you want to answer using this data, and write it down. Then, create a data visualization that answers the question, and briefly explain how your visualization answers the question.
+
+I want to know the correlation between the “pieces” and “us_price”. For this purpose, categorize legos to four groups: “75 and under pieces”, “76 - 150 pieces”, “151 - 400 pieces”, “401 pieces and over”. first, show the number of each categories using bar and pie charts. In all plots:
+
+### relevel x-axis parameter from fewest to largest number of pieces. (fct_relevel())
+
+### delete NA elements from counting. (drop_na())
+
+```{r}
+
+lego_piece_price <- lego %>%
+  select(pieces, us_price) %>%
+    mutate(NumberOfPieces=case_when(
+        pieces <= 75 ~ "Under 75 pieces" ,
+        between(pieces, 76, 150) ~ "76 to 150 pieces" ,
+        between(pieces, 151, 400) ~ "151 to 400 pieces" ,
+        pieces >= 401 ~ "over 400 pieces")) %>%
+    mutate(NumberOfPieces=fct_relevel(NumberOfPieces, 
+                                    "Under 75 pieces",
+                                    "76 to 150 pieces" ,
+                                    "151 to 400 pieces" ,
+                                    "over 400 pieces" )) %>%
+                                   drop_na()
+
+
+plot_ <- lego_piece_price %>%
+  group_by(NumberOfPieces) %>%
+ count()
+
+ggplot(plot_, aes(NumberOfPieces, n))+
+  geom_col()
+```

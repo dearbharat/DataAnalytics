@@ -1,0 +1,11 @@
+---
+title: Covid Speeches Sentiment Analysis
+author: R package build
+date: '2021-06-08'
+slug: covid-speeches-sentiment-analysis
+categories:
+  - shiny
+tags: []
+---
+
+## Covid Speeches in UK and Scotland

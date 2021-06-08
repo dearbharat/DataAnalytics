@@ -1,0 +1,14 @@
+name: DataAnalytics
+title: DataAnalytics
+username:
+account: dearbharat
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4242570
+bundleId: 4691481
+url: https://dearbharat.shinyapps.io/DataAnalytics/
+when: 1623144489.04128
+lastSyncTime: 1623144489.0413
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: A03 EDA1.Rmd|Combine_UK_Scot.R|config.yaml|covid-speeches-scot-bigrams.rds|covid-speeches-scot-words.rds|covid-speeches-scot.rds|covid-speeches-uk-bigrams.rds|covid-speeches-uk-words.rds|covid-speeches-uk.R|covid-speeches-uk.rds|Data IO.Rmd|Data recode.Rmd|df-na.csv|df.csv|edibnb-badnames.csv|favourite-food.xlsx|index.Rmd|layouts/shortcodes/blogdown/postref.html|lego_sales.csv|netlify.toml|nobel.csv|R/build.R|R/build2.R|Rcpp_1.0.6.tgz|README.md|relig-income.xlsx|resources/_gen/assets/scss/sass/main.scss_48b060fe05b0a273d182ef83c0605941.content|resources/_gen/assets/scss/sass/main.scss_48b060fe05b0a273d182ef83c0605941.json|Shiny-data-prep-uk.Rmd|Shiny-data-prep.R|static/.gitkeep|test.html
