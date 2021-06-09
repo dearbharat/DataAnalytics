@@ -1,8 +1,8 @@
 ---
-title: Shiny App Demonstration
+title: Scotland and UK FM Speech Analysis
 author: R package build
 date: '2021-06-09'
-slug: shiny-app-demonstration
+slug: scotland-and-uk-fm-speech-analysis
 categories:
   - shiny
   - ggplot2
@@ -12,8 +12,7 @@ runtime: shiny
 output: html_document
 ---
 
-## Covid Speeches Senitment Analysis
-This interactive shiny app analyzes the speeches made by first ministers in Scotland and UK during the Covid Pandemic.
-
+## Covid Speeches Sentiment Analysis
+This interactive visualization presents the net sentiment of speeches delivered by the first ministers of UK and Scotland.
 
 <iframe src="https://dearbharat.shinyapps.io/DataAnalytics/" height="800" width="100%" frameborder="no"></iframe>
