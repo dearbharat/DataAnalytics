@@ -1,0 +1,17 @@
+---
+title: Shiny App Demonstration
+author: R package build
+date: '2021-06-09'
+slug: shiny-app-demonstration
+categories:
+  - shiny
+  - ggplot2
+  - tidyverse
+tags: []
+runtime: shiny
+---
+
+## Covid Speeches Senitment Analysis
+This interactive shiny app analyzes the speeches made by first ministers in Scotland and UK during the Covid Pandemic.
+
+<iframe src="https://dearbharat.shinyapps.io/DataAnalytics/" height=800 width=100% frameborder=false></iframe>
