@@ -6,7 +6,16 @@
     <description>Recent content in tidyverse on dearbharat - Fundamentals of Analytics</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/tidyverse/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/tidyverse/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Covid Speeches V3</title>
+      <link>/2021/06/08/covid-speeches-v3/</link>
+      <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/06/08/covid-speeches-v3/</guid>
+      <description>  </description>
+    </item>
+    
     <item>
       <title>Data Wrangling</title>
       <link>/2021/05/25/data-wrangling/</link>
