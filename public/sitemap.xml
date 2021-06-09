@@ -2,31 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2021-06-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/2021/06/08/covid-speeches-sentiment-analysis/</loc>
-    <lastmod>2021-06-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/2021/06/08/covid-speeches-v3/</loc>
-    <lastmod>2021-06-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/</loc>
-    <lastmod>2021-06-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/ggplot2/</loc>
-    <lastmod>2021-06-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/post/</loc>
-    <lastmod>2021-06-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/shiny/</loc>
-    <lastmod>2021-06-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/tidyverse/</loc>
-    <lastmod>2021-06-08T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/categories/basics/</loc>
+    <lastmod>2021-05-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/</loc>
     <lastmod>2021-05-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/2021/05/25/data-wrangling/</loc>
@@ -35,7 +14,16 @@
     <loc>/2021/05/25/data-wrangling-using-tidyverse/</loc>
     <lastmod>2021-05-25T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/</loc>
+    <lastmod>2021-05-25T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/2021/05/25/fun-with-r/</loc>
+    <lastmod>2021-05-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/post/</loc>
+    <lastmod>2021-05-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/tidyverse/</loc>
     <lastmod>2021-05-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/about/</loc>
@@ -45,6 +33,9 @@
     <lastmod>2021-05-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/2021/05/18/data-visualization-using-ggplot2/</loc>
+    <lastmod>2021-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/ggplot2/</loc>
     <lastmod>2021-05-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
