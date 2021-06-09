@@ -1,4 +1,3 @@
-# deployed app: https://minecr.shinyapps.io/fm-speeches-covid19-simple/
 # load packages ----------------------------------------------------------------
 
 library(shiny)
